@@ -1,0 +1,24 @@
+# ===============================
+# This requirements file defines the dependencies needed
+# to run the Playwright + Pytest  project.
+# Each dependency is pinned to a stable version to ensure
+# consistent results across environments.
+# ===============================
+
+# Core testing framework
+python==3.13.7            # Python version
+pytest==8.4.2             # Test runner
+
+# Browser automation
+playwright==1.48.0        # Playwright core library (brew install playwright-mcp)
+pytest-playwright==0.5.6  # Pytest integration for Playwright
+
+# API testing
+requests==2.32.3          # HTTP client for API calls
+
+# ===============================
+
+pytest-xdist==3.6.1      # Parallel test execution
+allure-pytest==2.13.5    # Advanced reporting
+python-dotenv==1.0.1     # Load environment variables
+tqdm==4.66.5             # Progress bars for custom scripts
